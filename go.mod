@@ -1,4 +1,4 @@
-module github.com/OpenDiablo2/dcc
+module github.com/gravestench/dcc
 
 go 1.16
 
