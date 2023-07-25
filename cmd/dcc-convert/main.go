@@ -11,8 +11,9 @@ import (
 	"os"
 	"path/filepath"
 
-	dcc "github.com/OpenDiablo2/dcc/pkg"
 	gpl "github.com/gravestench/gpl/pkg"
+
+	"github.com/gravestench/dcc"
 )
 
 type options struct {
@@ -72,7 +73,7 @@ func main() {
 			return
 		}
 
-		d.SetPalette(color.Palette(*gplInstance))
+		d.SetPalette(color.Palette(gplInstance))
 	} else {
 		d.SetPalette(nil)
 	}

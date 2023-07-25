@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"image"
 
-	"github.com/OpenDiablo2/bitstream"
+	"github.com/gravestench/bitstream"
 )
 
 const streamSizeBits = 20 // num bits for representing a substream

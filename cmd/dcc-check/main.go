@@ -7,7 +7,7 @@ import (
 )
 
 import (
-	dcc "github.com/OpenDiablo2/dcc/pkg"
+	"github.com/gravestench/dcc"
 )
 
 func main() {

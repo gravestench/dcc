@@ -11,8 +11,8 @@ import (
 
 	gpl "github.com/gravestench/gpl/pkg"
 
-	dccLib "github.com/OpenDiablo2/dcc/pkg"
-	dccWidget "github.com/OpenDiablo2/dcc/pkg/giuwidget"
+	"github.com/gravestench/dcc"
+	widget "github.com/gravestench/dcc/pkg/giuwidget"
 )
 
 const (
@@ -39,7 +39,7 @@ func main() {
 		return
 	}
 
-	dcc, err := dccLib.FromBytes(fileContents)
+	dcc, err := dcc.FromBytes(fileContents)
 	if err != nil {
 		fmt.Print(err)
 		return
@@ -65,7 +65,7 @@ func main() {
 
 	window := giu.NewMasterWindow(title, defaultWidth, defaultHeight, windowFlags)
 
-	widget := dccWidget.Create(nil, "dccviewer", dcc)
+	widget := widget.Create(nil, "dccviewer", dcc)
 
 	window.Run(func() {
 		giu.SingleWindow().Layout(widget)

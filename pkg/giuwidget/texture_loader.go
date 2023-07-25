@@ -87,13 +87,7 @@ func (t *textureLoader) ProcessTextureLoadRequests() {
 
 			loadRequest := item.(TextureLoadRequestItem)
 
-			var texture *giu.Texture
-
-			if texture, err = giu.NewTextureFromRgba(loadRequest.rgb); err != nil {
-				log.Fatal(err)
-			}
-
-			loadRequest.callback(texture)
+			giu.NewTextureFromRgba(loadRequest.rgb, loadRequest.callback)
 		}
 	}()
 }

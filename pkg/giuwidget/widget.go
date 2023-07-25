@@ -7,7 +7,7 @@ import (
 	"github.com/AllenDang/giu"
 	"github.com/AllenDang/imgui-go"
 
-	dcclib "github.com/OpenDiablo2/dcc/pkg"
+	"github.com/gravestench/dcc"
 )
 
 const (
@@ -16,12 +16,12 @@ const (
 
 type widget struct {
 	id            string
-	dcc           *dcclib.DCC
+	dcc           *dcc.DCC
 	textureLoader TextureLoader
 }
 
 // Create creates a new dcc widget
-func Create(state []byte, id string, dcc *dcclib.DCC) giu.Widget {
+func Create(state []byte, id string, dcc *dcc.DCC) giu.Widget {
 	result := &widget{
 		id:            id,
 		dcc:           dcc,
