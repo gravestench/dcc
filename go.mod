@@ -9,7 +9,7 @@ require (
 	github.com/AllenDang/imgui-go v1.12.1-0.20220322114136-499bbf6a42ad
 	github.com/OpenDiablo2/OpenDiablo2 v0.0.0-20211021131836-7f92c571bf04
 	github.com/enriquebris/goconcurrentqueue v0.7.0
-	github.com/gravestench/bitstream v0.0.0-20230725041847-d02b4f2bac63
+	github.com/gravestench/bitstream v0.0.0-20230728184458-917abdef8ae3
 	github.com/gravestench/gpl v0.0.0-20230725031950-76e1a2d2d155
 )
 
